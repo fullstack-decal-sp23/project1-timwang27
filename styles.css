@@ -9,16 +9,13 @@ html {
 
 .heading {
     color: black;
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transform: scale(1, 1.3);
+    font: 3.5rem bold Georgia;
 }
 
-/* navbar */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
@@ -31,9 +28,8 @@ html {
 }
 
 .navbar ul li {
-    font-family: century;
+    font: helvetica;
     font-size: 1.1rem;
-    font-weight: bold;
 }
 
 .navbar ul li a {
@@ -63,8 +59,9 @@ html {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    background: url("img3.jpg") no-repeat center center/cover;
+    background-image: url("img3.jpg");
+    background-size: cover;
+    background-position: center;
     height: 940px;
     width: 100%;
     z-index: -1;
@@ -73,17 +70,17 @@ html {
 
 #home h1 {
     margin-top: 200px;
-    padding-bottom: 15px;
-    font-size: 4.5rem;
+    margin-bottom: 15px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: 6.5rem bold Georgia;
 }
 
 #home h2 {
     margin-bottom: 40px;
+    font: 1.5rem light Georgia;
 }
 
-.btn {
+#home a {
     background: none;
     text-decoration: none;
     text-align: center;
@@ -95,7 +92,7 @@ html {
     transition: all 0.2s ease;
 }
 
-.btn:hover {
+#home a:hover {
     background-color: white;
     color: grey;
 }
@@ -105,45 +102,43 @@ html {
     display: flex;
     flex-direction: row;
     text-align: start;
-    height: 100%;
-    padding: 50px 0px;
+    padding: 60px 0px;
     background-color: #efeeee;
 }
 
-#about h2 {
-    color: black;
-    text-align: start;
+#about h3 {
     margin: 40px 0px;
 }
 
 #about img {
-    width: 500px;
+    width: 400px;
     height: 400px;
-    padding: 0px 30px;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0px 60px;
+    width: 40%;
+    margin: 0 10%;
 }
 
 /* Work */
 #work {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
-#work h1 {
-    margin: 60px;
+#work h4 {
+    margin-top: 60px;
 }
 
+#work h5 {
+    font: 1.5rem normal roboto;
+}
+
+/* TODO */
 .gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 .gallery img {
@@ -159,15 +154,15 @@ html {
 }
 
 
-/* Contact Section */
+/* Contact */
 #contact {
     display: flex;
     flex-direction: column;
     background-color: #efeeee;
 }
 
-#contact h1 {
-    margin: 50px;
+#contact h6 {
+    margin: 40px;
 }
 
 .form {
